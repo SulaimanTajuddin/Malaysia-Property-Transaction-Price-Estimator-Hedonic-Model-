@@ -2,13 +2,13 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "8bbdff06",
+   "id": "0a495975",
    "metadata": {
     "papermill": {
-     "duration": 0.003274,
-     "end_time": "2026-02-27T08:24:01.055359",
+     "duration": 0.003729,
+     "end_time": "2026-03-03T04:50:35.563369",
      "exception": false,
-     "start_time": "2026-02-27T08:24:01.052085",
+     "start_time": "2026-03-03T04:50:35.559640",
      "status": "completed"
     },
     "tags": []
@@ -18,21 +18,41 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "59925242",
+   "metadata": {
+    "papermill": {
+     "duration": 0.002534,
+     "end_time": "2026-03-03T04:50:35.568570",
+     "exception": false,
+     "start_time": "2026-03-03T04:50:35.566036",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "**Problem statement/Objective:**\n",
+    "\n",
+    "1. To predict the transacted property price in Malaysia, Johor, Pasir Gudang (focusing Kota Masai & Masai area)\n",
+    "2. Choosing the best model for predicting by model evaluation"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "5de6a649",
+   "id": "9e919dec",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-02-27T08:24:01.062449Z",
-     "iopub.status.busy": "2026-02-27T08:24:01.062056Z",
-     "iopub.status.idle": "2026-02-27T08:24:04.588433Z",
-     "shell.execute_reply": "2026-02-27T08:24:04.587592Z"
+     "iopub.execute_input": "2026-03-03T04:50:35.575755Z",
+     "iopub.status.busy": "2026-03-03T04:50:35.574982Z",
+     "iopub.status.idle": "2026-03-03T04:50:38.586074Z",
+     "shell.execute_reply": "2026-03-03T04:50:38.585293Z"
     },
     "papermill": {
-     "duration": 3.532247,
-     "end_time": "2026-02-27T08:24:04.590530",
+     "duration": 3.01742,
+     "end_time": "2026-03-03T04:50:38.588445",
      "exception": false,
-     "start_time": "2026-02-27T08:24:01.058283",
+     "start_time": "2026-03-03T04:50:35.571025",
      "status": "completed"
     },
     "tags": []
@@ -49,13 +69,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "eb386db0",
+   "id": "d1fd2650",
    "metadata": {
     "papermill": {
-     "duration": 0.001718,
-     "end_time": "2026-02-27T08:24:04.594109",
+     "duration": 0.002503,
+     "end_time": "2026-03-03T04:50:38.593585",
      "exception": false,
-     "start_time": "2026-02-27T08:24:04.592391",
+     "start_time": "2026-03-03T04:50:38.591082",
      "status": "completed"
     },
     "tags": []
@@ -67,19 +87,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "08d02a1d",
+   "id": "84b982f4",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-02-27T08:24:04.599197Z",
-     "iopub.status.busy": "2026-02-27T08:24:04.598648Z",
-     "iopub.status.idle": "2026-02-27T08:24:06.163334Z",
-     "shell.execute_reply": "2026-02-27T08:24:06.162080Z"
+     "iopub.execute_input": "2026-03-03T04:50:38.602196Z",
+     "iopub.status.busy": "2026-03-03T04:50:38.601184Z",
+     "iopub.status.idle": "2026-03-03T04:50:40.327529Z",
+     "shell.execute_reply": "2026-03-03T04:50:40.326418Z"
     },
     "papermill": {
-     "duration": 1.569561,
-     "end_time": "2026-02-27T08:24:06.165390",
+     "duration": 1.733684,
+     "end_time": "2026-03-03T04:50:40.329737",
      "exception": false,
-     "start_time": "2026-02-27T08:24:04.595829",
+     "start_time": "2026-03-03T04:50:38.596053",
      "status": "completed"
     },
     "tags": []
@@ -101,13 +121,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "1b84b8a4",
+   "id": "2877e00d",
    "metadata": {
     "papermill": {
-     "duration": 0.00226,
-     "end_time": "2026-02-27T08:24:06.170654",
+     "duration": 0.002681,
+     "end_time": "2026-03-03T04:50:40.335327",
      "exception": false,
-     "start_time": "2026-02-27T08:24:06.168394",
+     "start_time": "2026-03-03T04:50:40.332646",
      "status": "completed"
     },
     "tags": []
@@ -119,19 +139,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "5d66aa49",
+   "id": "005fc8e2",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-02-27T08:24:06.178246Z",
-     "iopub.status.busy": "2026-02-27T08:24:06.177612Z",
-     "iopub.status.idle": "2026-02-27T08:24:06.207075Z",
-     "shell.execute_reply": "2026-02-27T08:24:06.206208Z"
+     "iopub.execute_input": "2026-03-03T04:50:40.343009Z",
+     "iopub.status.busy": "2026-03-03T04:50:40.342005Z",
+     "iopub.status.idle": "2026-03-03T04:50:40.377479Z",
+     "shell.execute_reply": "2026-03-03T04:50:40.376322Z"
     },
     "papermill": {
-     "duration": 0.036182,
-     "end_time": "2026-02-27T08:24:06.209006",
+     "duration": 0.041676,
+     "end_time": "2026-03-03T04:50:40.379702",
      "exception": false,
-     "start_time": "2026-02-27T08:24:06.172824",
+     "start_time": "2026-03-03T04:50:40.338026",
      "status": "completed"
     },
     "tags": []
@@ -139,73 +159,159 @@
    "outputs": [
     {
      "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Property Type</th>\n",
+       "      <th>District</th>\n",
+       "      <th>Mukim</th>\n",
+       "      <th>Scheme Name/Area</th>\n",
+       "      <th>Road Name</th>\n",
+       "      <th>Month, Year of Transaction Date</th>\n",
+       "      <th>Tenure</th>\n",
+       "      <th>Land/Parcel Area</th>\n",
+       "      <th>Unit</th>\n",
+       "      <th>Main Floor Area</th>\n",
+       "      <th>Unit</th>\n",
+       "      <th>Unit Level</th>\n",
+       "      <th>Transaction Price</th>\n",
+       "      <th>Unnamed: 13</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1 - 1 1/2 Storey Semi-Detached</td>\n",
+       "      <td>Alor Gajah</td>\n",
+       "      <td>Bdr Masjid Tanah</td>\n",
+       "      <td>TMN BUKIT INDAH FASA 2</td>\n",
+       "      <td>JLN BUKIT INDAH 6</td>\n",
+       "      <td>March 2024</td>\n",
+       "      <td>Freehold</td>\n",
+       "      <td>374.00</td>\n",
+       "      <td>sq.m</td>\n",
+       "      <td>106</td>\n",
+       "      <td>sq.m</td>\n",
+       "      <td></td>\n",
+       "      <td>RM470,000.00</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>1 - 1 1/2 Storey Semi-Detached</td>\n",
+       "      <td>Alor Gajah</td>\n",
+       "      <td>Belimbing</td>\n",
+       "      <td>TMN BELIMBING HARMONI</td>\n",
+       "      <td>JLN BELIMBING HARMONI</td>\n",
+       "      <td>May 2023</td>\n",
+       "      <td>Leasehold</td>\n",
+       "      <td>234.00</td>\n",
+       "      <td>sq.m</td>\n",
+       "      <td>67</td>\n",
+       "      <td>sq.m</td>\n",
+       "      <td></td>\n",
+       "      <td>RM483,000.00</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>1 - 1 1/2 Storey Semi-Detached</td>\n",
+       "      <td>Alor Gajah</td>\n",
+       "      <td>Belimbing</td>\n",
+       "      <td>TMN VISTA BELIMBING</td>\n",
+       "      <td>JALAN DURIAN TUNGGAL-ALOR GAJAH</td>\n",
+       "      <td>April 2021</td>\n",
+       "      <td>Freehold</td>\n",
+       "      <td>268.00</td>\n",
+       "      <td>sq.m</td>\n",
+       "      <td>118</td>\n",
+       "      <td>sq.m</td>\n",
+       "      <td></td>\n",
+       "      <td>RM359,000.00</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>1 - 1 1/2 Storey Semi-Detached</td>\n",
+       "      <td>Alor Gajah</td>\n",
+       "      <td>Belimbing</td>\n",
+       "      <td>TMN VISTA BELIMBING</td>\n",
+       "      <td>JALAN DURIAN TUNGGAL-ALOR GAJAH</td>\n",
+       "      <td>April 2021</td>\n",
+       "      <td>Freehold</td>\n",
+       "      <td>268.00</td>\n",
+       "      <td>sq.m</td>\n",
+       "      <td>118</td>\n",
+       "      <td>sq.m</td>\n",
+       "      <td></td>\n",
+       "      <td>RM435,000.00</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>1 - 1 1/2 Storey Semi-Detached</td>\n",
+       "      <td>Alor Gajah</td>\n",
+       "      <td>Belimbing</td>\n",
+       "      <td>TMN VISTA BELIMBING</td>\n",
+       "      <td>JALAN DURIAN TUNGGAL-ALOR GAJAH</td>\n",
+       "      <td>April 2021</td>\n",
+       "      <td>Freehold</td>\n",
+       "      <td>297.00</td>\n",
+       "      <td>sq.m</td>\n",
+       "      <td>118</td>\n",
+       "      <td>sq.m</td>\n",
+       "      <td></td>\n",
+       "      <td>RM373,000.00</td>\n",
+       "      <td>NaN</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
       "text/plain": [
-       "<bound method NDFrame.head of                          Property Type    District             Mukim  \\\n",
-       "0       1 - 1 1/2 Storey Semi-Detached  Alor Gajah  Bdr Masjid Tanah   \n",
-       "1       1 - 1 1/2 Storey Semi-Detached  Alor Gajah         Belimbing   \n",
-       "2       1 - 1 1/2 Storey Semi-Detached  Alor Gajah         Belimbing   \n",
-       "3       1 - 1 1/2 Storey Semi-Detached  Alor Gajah         Belimbing   \n",
-       "4       1 - 1 1/2 Storey Semi-Detached  Alor Gajah         Belimbing   \n",
-       "...                                ...         ...               ...   \n",
-       "481473                      Town House  Timur Laut    Tanjung Tokong   \n",
-       "481474                      Town House  Timur Laut    Tanjung Tokong   \n",
-       "481475                      Town House  Timur Laut    Tanjung Tokong   \n",
-       "481476                      Town House  Timur Laut    Tanjung Tokong   \n",
-       "481477                      Town House  Timur Laut    Tanjung Tokong   \n",
+       "                    Property Type    District             Mukim  \\\n",
+       "0  1 - 1 1/2 Storey Semi-Detached  Alor Gajah  Bdr Masjid Tanah   \n",
+       "1  1 - 1 1/2 Storey Semi-Detached  Alor Gajah         Belimbing   \n",
+       "2  1 - 1 1/2 Storey Semi-Detached  Alor Gajah         Belimbing   \n",
+       "3  1 - 1 1/2 Storey Semi-Detached  Alor Gajah         Belimbing   \n",
+       "4  1 - 1 1/2 Storey Semi-Detached  Alor Gajah         Belimbing   \n",
        "\n",
-       "              Scheme Name/Area                        Road Name  \\\n",
-       "0       TMN BUKIT INDAH FASA 2                JLN BUKIT INDAH 6   \n",
-       "1        TMN BELIMBING HARMONI            JLN BELIMBING HARMONI   \n",
-       "2          TMN VISTA BELIMBING  JALAN DURIAN TUNGGAL-ALOR GAJAH   \n",
-       "3          TMN VISTA BELIMBING  JALAN DURIAN TUNGGAL-ALOR GAJAH   \n",
-       "4          TMN VISTA BELIMBING  JALAN DURIAN TUNGGAL-ALOR GAJAH   \n",
-       "...                        ...                              ...   \n",
-       "481473           TANJONG VILLA                                    \n",
-       "481474           TANJONG VILLA                                    \n",
-       "481475      VILLA BUNGA TELANG                                    \n",
-       "481476      VILLA BUNGA TELANG                                    \n",
-       "481477      VILLA BUNGA TELANG                                    \n",
+       "         Scheme Name/Area                        Road Name  \\\n",
+       "0  TMN BUKIT INDAH FASA 2                JLN BUKIT INDAH 6   \n",
+       "1   TMN BELIMBING HARMONI            JLN BELIMBING HARMONI   \n",
+       "2     TMN VISTA BELIMBING  JALAN DURIAN TUNGGAL-ALOR GAJAH   \n",
+       "3     TMN VISTA BELIMBING  JALAN DURIAN TUNGGAL-ALOR GAJAH   \n",
+       "4     TMN VISTA BELIMBING  JALAN DURIAN TUNGGAL-ALOR GAJAH   \n",
        "\n",
-       "       Month, Year of Transaction Date     Tenure Land/Parcel Area  Unit  \\\n",
-       "0                           March 2024   Freehold           374.00  sq.m   \n",
-       "1                             May 2023  Leasehold           234.00  sq.m   \n",
-       "2                           April 2021   Freehold           268.00  sq.m   \n",
-       "3                           April 2021   Freehold           268.00  sq.m   \n",
-       "4                           April 2021   Freehold           297.00  sq.m   \n",
-       "...                                ...        ...              ...   ...   \n",
-       "481473                     August 2022   Freehold           103.00  sq.m   \n",
-       "481474                   February 2024   Freehold           174.00  sq.m   \n",
-       "481475                       July 2023   Freehold            83.00  sq.m   \n",
-       "481476                    January 2025   Freehold            83.00  sq.m   \n",
-       "481477                      April 2025   Freehold            77.11  sq.m   \n",
+       "  Month, Year of Transaction Date     Tenure Land/Parcel Area  Unit  \\\n",
+       "0                      March 2024   Freehold           374.00  sq.m   \n",
+       "1                        May 2023  Leasehold           234.00  sq.m   \n",
+       "2                      April 2021   Freehold           268.00  sq.m   \n",
+       "3                      April 2021   Freehold           268.00  sq.m   \n",
+       "4                      April 2021   Freehold           297.00  sq.m   \n",
        "\n",
-       "       Main Floor Area Unit         Unit Level Transaction Price    \\\n",
-       "0                  106         sq.m                   RM470,000.00   \n",
-       "1                   67         sq.m                   RM483,000.00   \n",
-       "2                  118         sq.m                   RM359,000.00   \n",
-       "3                  118         sq.m                   RM435,000.00   \n",
-       "4                  118         sq.m                   RM373,000.00   \n",
-       "...                ...          ...        ...                 ...   \n",
-       "481473               -            -          1        RM850,000.00   \n",
-       "481474               -            -          1      RM1,110,000.00   \n",
-       "481475               -            -          3        RM540,000.00   \n",
-       "481476               -            -          3        RM525,000.00   \n",
-       "481477               -            -          3        RM555,000.00   \n",
-       "\n",
-       "        Unnamed: 13  \n",
-       "0               NaN  \n",
-       "1               NaN  \n",
-       "2               NaN  \n",
-       "3               NaN  \n",
-       "4               NaN  \n",
-       "...             ...  \n",
-       "481473          NaN  \n",
-       "481474          NaN  \n",
-       "481475          NaN  \n",
-       "481476          NaN  \n",
-       "481477          NaN  \n",
-       "\n",
-       "[481478 rows x 14 columns]>"
+       "  Main Floor Area Unit         Unit Level Transaction Price    Unnamed: 13  \n",
+       "0             106         sq.m                   RM470,000.00          NaN  \n",
+       "1              67         sq.m                   RM483,000.00          NaN  \n",
+       "2             118         sq.m                   RM359,000.00          NaN  \n",
+       "3             118         sq.m                   RM435,000.00          NaN  \n",
+       "4             118         sq.m                   RM373,000.00          NaN  "
       ]
      },
      "execution_count": 3,
@@ -214,25 +320,25 @@
     }
    ],
    "source": [
-    "df.head"
+    "df.head(5)"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "b9b4b2bf",
+   "id": "41ad4869",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-02-27T08:24:06.216131Z",
-     "iopub.status.busy": "2026-02-27T08:24:06.215835Z",
-     "iopub.status.idle": "2026-02-27T08:24:06.556954Z",
-     "shell.execute_reply": "2026-02-27T08:24:06.556038Z"
+     "iopub.execute_input": "2026-03-03T04:50:40.389224Z",
+     "iopub.status.busy": "2026-03-03T04:50:40.388864Z",
+     "iopub.status.idle": "2026-03-03T04:50:40.723661Z",
+     "shell.execute_reply": "2026-03-03T04:50:40.722432Z"
     },
     "papermill": {
-     "duration": 0.346584,
-     "end_time": "2026-02-27T08:24:06.559110",
+     "duration": 0.342497,
+     "end_time": "2026-03-03T04:50:40.725685",
      "exception": false,
-     "start_time": "2026-02-27T08:24:06.212526",
+     "start_time": "2026-03-03T04:50:40.383188",
      "status": "completed"
     },
     "tags": []
@@ -273,19 +379,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "346b5009",
+   "id": "16172a30",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-02-27T08:24:06.565599Z",
-     "iopub.status.busy": "2026-02-27T08:24:06.564654Z",
-     "iopub.status.idle": "2026-02-27T08:24:07.456394Z",
-     "shell.execute_reply": "2026-02-27T08:24:07.455528Z"
+     "iopub.execute_input": "2026-03-03T04:50:40.734460Z",
+     "iopub.status.busy": "2026-03-03T04:50:40.733593Z",
+     "iopub.status.idle": "2026-03-03T04:50:41.640571Z",
+     "shell.execute_reply": "2026-03-03T04:50:41.639558Z"
     },
     "papermill": {
-     "duration": 0.898413,
-     "end_time": "2026-02-27T08:24:07.459810",
+     "duration": 0.913928,
+     "end_time": "2026-03-03T04:50:41.643088",
      "exception": false,
-     "start_time": "2026-02-27T08:24:06.561397",
+     "start_time": "2026-03-03T04:50:40.729160",
      "status": "completed"
     },
     "tags": []
@@ -319,19 +425,19 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "463a37db",
+   "id": "a149b6dc",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2026-02-27T08:24:07.468881Z",
-     "iopub.status.busy": "2026-02-27T08:24:07.467790Z",
-     "iopub.status.idle": "2026-02-27T08:24:09.680574Z",
-     "shell.execute_reply": "2026-02-27T08:24:09.679696Z"
+     "iopub.execute_input": "2026-03-03T04:50:41.653895Z",
+     "iopub.status.busy": "2026-03-03T04:50:41.653574Z",
+     "iopub.status.idle": "2026-03-03T04:50:43.848639Z",
+     "shell.execute_reply": "2026-03-03T04:50:43.847704Z"
     },
     "papermill": {
-     "duration": 2.219385,
-     "end_time": "2026-02-27T08:24:09.682680",
+     "duration": 2.203049,
+     "end_time": "2026-03-03T04:50:43.850807",
      "exception": false,
-     "start_time": "2026-02-27T08:24:07.463295",
+     "start_time": "2026-03-03T04:50:41.647758",
      "status": "completed"
     },
     "tags": []
@@ -360,6 +466,233 @@
    ],
    "source": [
     "msno.matrix(df)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "932f65b5",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2026-03-03T04:50:43.864159Z",
+     "iopub.status.busy": "2026-03-03T04:50:43.863448Z",
+     "iopub.status.idle": "2026-03-03T04:50:43.868919Z",
+     "shell.execute_reply": "2026-03-03T04:50:43.867814Z"
+    },
+    "papermill": {
+     "duration": 0.014634,
+     "end_time": "2026-03-03T04:50:43.871050",
+     "exception": false,
+     "start_time": "2026-03-03T04:50:43.856416",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Existing column :\n",
+      " ['Property Type', 'District', 'Mukim', 'Scheme Name/Area', 'Road Name', 'Month, Year of Transaction Date', 'Tenure', 'Land/Parcel Area', 'Unit', 'Main Floor Area', 'Unit        ', 'Unit Level', 'Transaction Price  ', 'Unnamed: 13']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# inspect column name, view any whitespace\n",
+    "print(\"\\nExisting column :\\n \" + f\"{df.columns.tolist()}\") "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "850ddf48",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2026-03-03T04:50:43.883751Z",
+     "iopub.status.busy": "2026-03-03T04:50:43.883369Z",
+     "iopub.status.idle": "2026-03-03T04:50:44.187409Z",
+     "shell.execute_reply": "2026-03-03T04:50:44.186348Z"
+    },
+    "papermill": {
+     "duration": 0.312864,
+     "end_time": "2026-03-03T04:50:44.189479",
+     "exception": false,
+     "start_time": "2026-03-03T04:50:43.876615",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Property Type  :  0\n",
+      "District  :  0\n",
+      "Mukim  :  0\n",
+      "Scheme Name/Area  :  0\n",
+      "Road Name  :  0\n",
+      "Month, Year of Transaction Date  :  0\n",
+      "Tenure  :  0\n",
+      "Land/Parcel Area  :  0\n",
+      "Unit  :  0\n",
+      "Main Floor Area  :  0\n",
+      "Unit          :  0\n",
+      "Unit Level  :  0\n",
+      "Transaction Price    :  0\n",
+      "Unnamed: 13  :  481478\n"
+     ]
+    }
+   ],
+   "source": [
+    "# checking total null values/NaN in a column\n",
+    "for i in df.columns:\n",
+    "    print(i,\" : \",df[i].isnull().sum()) # OR print(i,\" : \",df[i].isna().sum())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "92f773ef",
+   "metadata": {
+    "papermill": {
+     "duration": 0.005367,
+     "end_time": "2026-03-03T04:50:44.200457",
+     "exception": false,
+     "start_time": "2026-03-03T04:50:44.195090",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "**Data wrangling:**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "7c172697",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2026-03-03T04:50:44.212947Z",
+     "iopub.status.busy": "2026-03-03T04:50:44.212611Z",
+     "iopub.status.idle": "2026-03-03T04:50:44.218180Z",
+     "shell.execute_reply": "2026-03-03T04:50:44.217285Z"
+    },
+    "papermill": {
+     "duration": 0.014357,
+     "end_time": "2026-03-03T04:50:44.220331",
+     "exception": false,
+     "start_time": "2026-03-03T04:50:44.205974",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Column after remove leading & trailing whitespace :\n",
+      " ['Property Type', 'District', 'Mukim', 'Scheme Name/Area', 'Road Name', 'Month, Year of Transaction Date', 'Tenure', 'Land/Parcel Area', 'Unit', 'Main Floor Area', 'Unit', 'Unit Level', 'Transaction Price', 'Unnamed: 13']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# remove leading and trailing whitespace\n",
+    "df.columns = df.columns.str.strip() \n",
+    "print(\"\\nColumn after remove leading & trailing whitespace :\\n \" + f\"{df.columns.tolist()}\") "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "1fc8c476",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2026-03-03T04:50:44.233202Z",
+     "iopub.status.busy": "2026-03-03T04:50:44.232853Z",
+     "iopub.status.idle": "2026-03-03T04:50:44.637378Z",
+     "shell.execute_reply": "2026-03-03T04:50:44.636103Z"
+    },
+    "papermill": {
+     "duration": 0.413393,
+     "end_time": "2026-03-03T04:50:44.639372",
+     "exception": false,
+     "start_time": "2026-03-03T04:50:44.225979",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Property Type  :  0\n",
+      "District  :  0\n",
+      "Mukim  :  0\n",
+      "Scheme Name/Area  :  0\n",
+      "Road Name  :  0\n",
+      "Month, Year of Transaction Date  :  0\n",
+      "Tenure  :  0\n",
+      "Land/Parcel Area  :  0\n",
+      "Unit  :  Unit    0\n",
+      "Unit    0\n",
+      "dtype: int64\n",
+      "Main Floor Area  :  0\n",
+      "Unit  :  Unit    0\n",
+      "Unit    0\n",
+      "dtype: int64\n",
+      "Unit Level  :  0\n",
+      "Transaction Price  :  0\n",
+      "Unnamed: 13  :  481478\n"
+     ]
+    }
+   ],
+   "source": [
+    "# checking total null values/NaN in a column\n",
+    "for i in df.columns: \n",
+    "    print(i,\" : \",df[i].isnull().sum()) # OR print(i,\" : \",df[i].isna().sum())# checking total null values/NaN in a column"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "5c87f40b",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2026-03-03T04:50:44.654130Z",
+     "iopub.status.busy": "2026-03-03T04:50:44.653768Z",
+     "iopub.status.idle": "2026-03-03T04:50:45.081284Z",
+     "shell.execute_reply": "2026-03-03T04:50:45.080311Z"
+    },
+    "papermill": {
+     "duration": 0.437263,
+     "end_time": "2026-03-03T04:50:45.083303",
+     "exception": false,
+     "start_time": "2026-03-03T04:50:44.646040",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "Result after remove NaN column :\n",
+      "['Property Type', 'District', 'Mukim', 'Scheme Name/Area', 'Road Name', 'Month, Year of Transaction Date', 'Tenure', 'Land/Parcel Area', 'Unit', 'Main Floor Area', 'Unit', 'Unit Level', 'Transaction Price']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# remove the entire column only if all values are NaN and print the output after removed NaN column\n",
+    "df = df.dropna(axis=1, how='all') \n",
+    "print(\"\\nResult after remove NaN column :\\n\"+ f\"{df.columns.tolist()}\")"
    ]
   }
  ],
@@ -399,14 +732,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 12.908471,
-   "end_time": "2026-02-27T08:24:10.408715",
+   "duration": 13.276731,
+   "end_time": "2026-03-03T04:50:45.710437",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2026-02-27T08:23:57.500244",
+   "start_time": "2026-03-03T04:50:32.433706",
    "version": "2.6.0"
   }
  },
